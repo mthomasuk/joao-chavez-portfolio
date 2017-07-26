@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'GT-American-Regular';
+  src: url('./fonts/GT-America-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT-American-Thin';
+  src: url('./fonts/GT-America-Thin.woff') format('woff');
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.innerContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+
+.left, .right {
+  box-sizing: border-box;
+  font-family: 'GT-American-Regular', sans-serif;
+  padding: 20px;
+  position: absolute;
+  top: 65px;
+  bottom: 65px;
+}
+
+.left {
+  font-family: 'GT-American-Thin', sans-serif;
+  text-transform: uppercase;
+  font-size: 16vh;
+  left: 0;
+  width: 65%;
+  border-right: 1px solid #000;
+}
+
+.right {
+  padding: 40px;
+  right: 0;
+  width: 35%;
+  border-right: 0;
+  font-size: 1.5vw;
+}
+
+.left a {
+  display: block;
+  position: relative;
+}
+
+.left a:before {
+  position: absolute;
+  left: -20px;
+  background-color: #fff;
+  color: #fff;
+  z-index: -1;
+}
+
+.left a:after {
+  opacity: 0;
+  position: absolute;
+  top: -37%;
+  right: -20px;
+  display: block;
+  z-index: -2;
+}
+
+.left a:nth-of-type(1):before {
+  content: '_____________';
+}
+
+.left a:nth-of-type(2):before {
+  content: '_________';
+}
+
+.left a:nth-of-type(3):before {
+  content: '____________';
+}
+
+.left a:nth-of-type(4):before {
+  content: '____________';
+}
+
+.left a:after {
+  content: '________________________';
+}
+
+.left a:hover:after {
+  opacity: 1;
+}
+
+.left a.active:after {
+  opacity: 1;
+}
+
+@media (max-width:1210px) {
+  .left {
+    font-size: 12.7vw;
+  }
+}
+
+@media (max-width:800px) {
+  .innerContainer {
+    bottom: -65px;
+  }
+  .left, .right {
+    position: relative;
+    width: 100%;
+  }
+  .left {
+    font-size: 15vw;
+    top: 65px;
+    border: 0;
+  }
+  .right {
+    font-size: 4vw;
+    border: 0;
+    border-top: 1px solid #000;
+    margin-bottom: 65px;
+  }
+}

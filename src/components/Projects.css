@@ -1,0 +1,75 @@
+.projects span {
+  display: block;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5vw;
+}
+
+.projects span:before {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  display: flex;
+  border-bottom: 2px solid #000;
+}
+
+.projects span:before {
+  content: ' ';
+}
+
+.projects span:hover:before {
+  opacity: 1;
+}
+
+.projects span:nth-of-type(1):before {
+  width: 47%;
+}
+
+.projects span:nth-of-type(2):before {
+  width: 70%;
+}
+
+.projects span:nth-of-type(3):before {
+  width: 91%;
+}
+
+.projects span:nth-of-type(4):before {
+  width: 83%;
+}
+
+.projects span:nth-of-type(5):before {
+  width: 63%;
+}
+
+.projects span:nth-of-type(6):before {
+  width: 58%;
+}
+
+.projects span:nth-of-type(7):before {
+  width: 68%;
+}
+
+.projects span:nth-of-type(8):before {
+  width: 69%;
+}
+
+.projectTV {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+@media (max-width:800px) {
+  .projects a {
+    font-size: 4vw;
+  }
+  .projectTV {
+    top: 100%;
+    bottom: -200%;
+    border-bottom: 1px solid #000;
+  }
+}

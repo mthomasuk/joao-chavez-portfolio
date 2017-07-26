@@ -1,0 +1,57 @@
+.projectContainer {
+  position: absolute;
+  top: 65px;
+  bottom: 65px;
+  width: 100%;
+}
+
+.fullWidthBackground {
+  width: 100%;
+}
+
+.fullWidthBackground img {
+  width: 100%;
+}
+
+.projectDetails {
+  max-width: 750px;
+  margin: 80px auto;
+}
+
+.projectDetails:last-of-type {
+  margin-bottom: 135px;
+}
+
+.projectDetails div {
+  display: inline-block;
+  width: 50%;
+  vertical-align: text-top;
+}
+
+.projectDetails img {
+  width: 100%;
+  display: inline-block;
+}
+
+.projectDetails .halfWidth {
+  width: 50%;
+}
+
+.projectLeft {
+  line-height: 1.6em;
+}
+
+@media screen and (max-width:800px) {
+  .projectContainer {
+      top: 5%;
+  }
+  .projectDetails div {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+  .projectDetails {
+      box-sizing: border-box;
+      padding: 0 2%;
+  }
+}
