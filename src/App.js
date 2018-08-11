@@ -1,22 +1,49 @@
-import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
-import './App.css';
+import React, { PureComponent } from "react";
+import "./App.css";
 
-class App extends Component {
+import ImageOverlay from "./components/ImageOverlay";
 
+class App extends PureComponent {
   render() {
     return (
-      <div className="container">
-        <section className="header">
-          <Link to="/">Jo&atilde;o Chaves &mdash; Graphic Design &amp; Sound</Link>
-        </section>
-        {this.props.children}
-        <section className="footer">
-            <a href="">Tumblr</a>
-            <a href="">LinkedIn</a>
-            <a href="">Behance</a>
-        </section>
-      </div>
+      <section className="container">
+        <ImageOverlay />
+        <div className="container">
+          <div className="column">
+            Joāo Chaves<br />
+            <a>Graphic Design</a>
+            <br />
+            <a>Music</a>
+            <br />
+            <a>Guitar Nerd</a>
+            <br />
+            London<br />
+          </div>
+          <div className="column">
+            Currently at <a>U-Dox</a>
+            <br />
+            Co-Founder of <a>Studio Pyramid</a>
+            <br />
+            Founder of <a>Phuzz</a>
+            <br />
+          </div>
+          <div className="column">
+            <a>Selected clients:</a>
+            <br />
+            Adidas Originals<br />
+            Dickies<br />
+            EBay<br />
+            Long Live Southbank<br />
+            MINI<br />
+            NOS Disco<br />
+            Sony Music<br />
+            Viva-Radio<br />
+          </div>
+          <div className="column">
+            Any queries or full portfolio request please contact me <a>here</a>
+          </div>
+        </div>
+      </section>
     );
   }
 }

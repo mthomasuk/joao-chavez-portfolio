@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Bio from './components/Bio';
 import Projects from './components/Projects';
 import './Navigation.css';
 
-class Navigation extends Component {
+class Navigation extends PureComponent {
 
   constructor(props) {
       super(props);

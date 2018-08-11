@@ -1,10 +1,17 @@
-@font-face {
-  font-family: 'GT-American-Regular';
-  src: url('./fonts/GT-America-Regular.woff') format('woff');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'GT-American-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    line-height: 1.2;
 }

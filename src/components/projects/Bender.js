@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import './Bender.css';
 
-class Bender extends Component {
+class Bender extends PureComponent {
 
   render() {
     return (
