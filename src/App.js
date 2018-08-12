@@ -6,7 +6,7 @@ import ImageOverlay from "./components/ImageOverlay";
 class App extends PureComponent {
   render() {
     return (
-      <section className="container">
+      <section className="wrapper">
         <ImageOverlay />
         <div className="container">
           <div className="column">
@@ -40,7 +40,8 @@ class App extends PureComponent {
             Viva-Radio<br />
           </div>
           <div className="column">
-            Any queries or full portfolio request please contact me <a>here</a>
+            Any queries or full portfolio<br />
+            request please contact me <a>here</a>
           </div>
         </div>
       </section>

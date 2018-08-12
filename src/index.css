@@ -15,3 +15,11 @@ body {
     font-size: 18px;
     line-height: 1.2;
 }
+
+@media (max-width: 600px) {
+    html,
+    body,
+    #root {
+        height: auto;
+    }
+}
