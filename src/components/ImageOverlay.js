@@ -3,7 +3,7 @@ import "./ImageOverlay.css";
 
 const IMAGE_SRC_ARRAY = [
     { src: "../../img/BassetHounds.jpg", alt: "Basset Hounds" },
-    { src: "../../img/BatAndBall.jpg", alt: "Bat and Ball" },
+    { src: "../../img/BatandBall.jpg", alt: "Bat and Ball" },
     { src: "../../img/BenderMasteringStudio.jpg", alt: "Bender" },
     { src: "../../img/Coexist.jpg", alt: "Coexist" },
     { src: "../../img/Interactive.jpg", alt: "Interactive" },
